@@ -1,0 +1,148 @@
+.profile{
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 256px);
+    font-family: poppins;
+    .header{
+        width: calc(100% - 100px);
+        padding: 20px;
+        margin: 0 30px;
+        display: flex;
+        align-items: center;
+        span{
+            font-size: 20px;
+            font-weight: bold;
+            padding-left: 10px;
+            color: #1d1d1d;
+        }
+    }
+    .container{
+        width: calc(100% - 100px);
+        padding: 20px;    
+        color: #FFFFFF; 
+        margin: 0 30px;
+        border:1px solid #ccc;
+        display: flex;
+        flex-direction: column;
+        .heading{
+            width: 100%;
+            padding: 10px 0;
+            border-bottom: 1px solid #000;
+            span{
+                font-size: 20px;
+                font-weight: bold;
+                color: #3f3f3f;
+                
+            }
+        }
+        .body{
+            width: 100%;
+            display: flex;
+            padding: 10px 0;
+            .left{
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                img{
+                    width: 200px;
+                    height: 250px;
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+                span{
+                    color: #3d3d3d;
+                    text-transform: capitalize;
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 0;
+                    &:nth-child(2){
+                        padding: 10px 0;
+                        font-size: 22px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .right{
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .tittle{
+                    display: flex;
+                    color: #1d1d1d;  
+                    span{
+                        font-size: 18px;
+                        text-transform: capitalize;
+                        font-weight: 500;
+                    }
+                }
+                .det{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .twoControl{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        margin-right: 5%;
+                        color: #1d1d1d;   
+                        .subtwo{ 
+                            width: calc(70% + 20px);
+                            display: flex;
+                            flex-direction: row;
+                            gap: 20px;
+                            input{
+                                width: calc(50% - 10px);
+                                border: 1px solid #555;
+                                font-size: 16px;
+                                padding: 10px;
+                                outline: none;
+                            }
+                            span{
+                                font-size: 16px;
+                                text-transform: capitalize;                
+                            }
+                        }
+                    }
+                    .formControl{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-right: 5%;
+                        color: #1d1d1d;    
+                        span{
+                            font-size: 16px;
+                            text-transform: capitalize;                       
+                        }
+                        input{
+                            width: 70%;
+                            border: 1px solid #555;
+                            font-size: 16px;
+                            padding: 10px;
+                            outline: none;
+                        }
+                        .two{
+                            width: 30%;
+                        }
+                    }
+                }
+                .btn{
+                    padding: 20px 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    button{
+                        border: none;
+                        padding: 10px 20px;
+                        font-size: 16px;
+                        color: #FFFF;
+                        cursor: pointer;
+                        background-color: rgb(11, 139, 82);
+                        font-weight: bold;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.notification{
+    width: calc(100vw - 256px);
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    min-height:calc(100% - 60px);
+    font-family: poppins;
+    .head{
+        display: flex;
+        justify-content: space-between;
+         align-items: center;
+         padding: 30px;
+        .tittle{
+            width: 270px;
+            height: 56px;
+            color: #1D242E;
+            display: flex;
+            flex-direction: column;
+            .path{
+                display: flex;
+                align-items: center;
+                width: 600px;
+                span{
+                    font-size: 24px;
+                    font-family: poppins;
+                    color: #1D242E;
+                    font-weight: bold;
+                }
+            }
+            span{
+                font-size: 14px;
+                font-family: poppins;
+                color: #1D242E;
+            }
+        }
+    } 
+}

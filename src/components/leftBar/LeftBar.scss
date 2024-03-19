@@ -1,0 +1,163 @@
+.leftBar{
+    width:256px;
+    height: 100vh;
+    background-color: #283342;
+    position: sticky;
+    top: 0;
+    left: 0;
+    .overlayer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        background-color: transparent;
+        opacity: .2;
+        z-index: 2;
+    }
+    .logo{
+        width: 256px;
+        height: 60px;
+        background-color: #1D242E;
+        display: flex;
+        align-items: center;
+        img{
+            width: 42px;
+            height: 42px;
+            margin-left: 24px;
+            object-fit: cover;
+        }
+        span{
+            font-weight: bold;
+            line-height: 24px;
+            font-size: 18px;
+            font-family: Poppins;
+            color: #FFFFFF;
+            padding-left: 17px;
+        }
+    }
+    .user{
+        width: 207px;
+        height: 42px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 24px;
+        display: flex;
+        justify-content: space-between;
+        .img{
+            position: relative;
+            img{
+                border-radius: 4px;
+                width: 42px;
+                height: 42px;  
+            }
+            .online{
+                position: absolute;
+                height: 12px;
+                width: 12px;
+                background-color: #2ED47A;
+                top: 24px;
+                left: 34px;
+                border-radius: 50%;
+                z-index: 2;
+                border: 2px solid #2E3744;
+            }
+        }
+        .desc{
+            color: #FFFFFF;
+            margin-left: 16px;
+            span{
+                &:first-child{
+                    font-size: 14px;
+                    font-family: poppins;
+                }
+                &:last-child{
+                    font-size: 11px;
+                    font-family: poppins;
+                    color: #FED600;
+                }
+            }
+        }
+        .more{
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            justify-content: center;
+            position: relative;
+            gap: 2px;
+            width: 10px;
+            span{
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: #FFFFFF;
+            }
+            .float{
+                position: absolute;
+                top: 50px;
+                right: -5px;
+                width: 125px;
+                height: 86px;
+                background-color: #FFFFFF;
+                z-index: 3;
+                border-radius: 5px;
+                box-shadow: -1px 3px 33px -5px rgba(204,204,204,1);
+                -webkit-box-shadow: -1px 3px 33px -5px rgba(204,204,204,1);
+                -moz-box-shadow: -1px 3px 33px -5px rgba(204,204,204,1);
+                .point{
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    background-color: #FFFFFF;
+                    right: 5px;
+                    top:-7px;
+                    transform: rotate(45deg);
+                    border-radius: 2px;
+                    z-index: 1;
+                }
+                .container{
+                    margin-top: 10px;
+                    display: flex;
+                    width: 125px;
+                    height: 25px;
+                    text-align: center;
+                    padding: 3px 0;
+                    span{
+                        font-size: 12px;
+                        font-family: poppins;
+                        color: #1D242E;
+                    }
+                }
+            }
+        }
+    }
+    .navs{
+        width: 256px;
+        height: auto;
+        .sep{
+         border-bottom: .2px solid #ccc;
+         padding-bottom: 10px;
+        }
+        .nav{
+            width: 256px;
+            height: 46px;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .icon{
+                display: flex;
+                align-items: center;
+                span{
+                    font-family: poppins;
+                    color: #FFFFFF;
+                    font-size: 14px;
+                    padding-left: 10px;
+                }
+            }   
+        }
+        .active{
+            background-color: #009099;
+        }
+    }
+}
